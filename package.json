@@ -1,0 +1,101 @@
+{
+  "name": "enhanced-quiz-portal",
+  "version": "2.0.0",
+  "description": "Enhanced Quiz Portal with Clerk Authentication, Study Materials, Mobile-First Design, and Monetization Features",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --port=3000 --open=index.html",
+    "build": "npm run optimize",
+    "optimize": "node scripts/optimize.js",
+    "deploy": "npm run build && gh-pages -d .",
+    "serve": "python -m http.server 8000",
+    "test": "echo \"Tests will be added in future versions\" && exit 0",
+    "lint": "echo \"Linting configuration will be added\""
+  },
+  "keywords": [
+    "quiz",
+    "education",
+    "mobile-first",
+    "clerk-auth",
+    "monetization",
+    "pwa",
+    "responsive",
+    "javascript",
+    "bootstrap"
+  ],
+  "author": {
+    "name": "Quiz Portal Team",
+    "email": "admin@quizportal.com",
+    "url": "https://github.com/rajnandan100"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajnandan100/enhanced-quiz-portal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rajnandan100/enhanced-quiz-portal/issues"
+  },
+  "homepage": "https://rajnandan100.github.io/enhanced-quiz-portal",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "gh-pages": "^6.1.1",
+    "terser": "^5.24.0",
+    "clean-css-cli": "^5.6.2"
+  },
+  "dependencies": {
+    "@clerk/clerk-js": "^4.70.0"
+  },
+  "peerDependencies": {
+    "bootstrap": "^5.3.0",
+    "aos": "^2.3.4",
+    "sweetalert2": "^11.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "iOS >= 10",
+    "Android >= 6"
+  ],
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "config": {
+    "QP-CONFIG-001": "Main project configuration",
+    "mobile_first": true,
+    "pwa_enabled": true,
+    "monetization_enabled": true,
+    "clerk_auth": true,
+    "offline_support": true
+  },
+  "metadata": {
+    "build_date": "2025-10-21",
+    "version_name": "Enhanced Mobile-First",
+    "features": [
+      "Clerk Authentication",
+      "Study Materials Management",
+      "Mobile-First Design",
+      "Ad Network Integration",
+      "Push Notifications",
+      "PWA Support",
+      "Admin Panel",
+      "Premium Subscriptions"
+    ],
+    "supported_devices": [
+      "Mobile Phones",
+      "Tablets",
+      "Desktop",
+      "Smart TVs"
+    ],
+    "supported_browsers": [
+      "Chrome",
+      "Firefox",
+      "Safari",
+      "Edge",
+      "Samsung Internet",
+      "UC Browser"
+    ]
+  }
+}
