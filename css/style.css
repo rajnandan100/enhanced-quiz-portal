@@ -1,3 +1,43 @@
-/* QP-STYLE-001: Main Styles */
-body{font-family:'Poppins',sans-serif}
-.bg-gradient{background:linear-gradient(135deg,#6366f1 0%,#8b5cf6 100%)}
+/* QP-STYLE-001: Main Styles - Modern, Fancy, Animated */
+:root{
+  --primary:#6366f1; --secondary:#8b5cf6; --bg:#0f1226; --card:#14183a; --text:#e8ebff; --muted:#aab0d9; --accent:#22d3ee;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{font-family:'Poppins',sans-serif;background:radial-gradient(1200px 600px at 20% -10%,rgba(139,92,246,.25),transparent),radial-gradient(1000px 500px at 110% 0,rgba(99,102,241,.25),transparent),var(--bg);color:var(--text);}
+
+/* QP-ANIM-001: Subtle float animation */
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes glow{0%,100%{box-shadow:0 10px 30px rgba(99,102,241,.25)}50%{box-shadow:0 12px 36px rgba(139,92,246,.35)}}
+
+/* QP-HERO-001 */
+.hero-section{position:relative;background:linear-gradient(135deg,var(--primary),var(--secondary));padding:80px 0;border-bottom-left-radius:24px;border-bottom-right-radius:24px;overflow:hidden}
+.hero-section .hero-title,.hero-section .hero-subtitle{color:#fff}
+.hero-section .glass-card{background:rgba(255,255,255,.12);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.15);border-radius:16px;animation:glow 4s ease-in-out infinite}
+
+/* QP-CARD-001 */
+.card{background:var(--card)!important;color:var(--text);border:1px solid rgba(255,255,255,.08);border-radius:16px;transition:transform .25s ease, box-shadow .25s ease}
+.card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.3)}
+
+/* QP-BTN-001 */
+.btn{border-radius:12px;padding:.7rem 1.1rem}
+.btn-primary{background:linear-gradient(135deg,var(--primary),var(--secondary));border:none}
+.btn-outline-light{border-color:rgba(255,255,255,.6);color:#fff}
+
+/* QP-NAV-001 */
+.navbar.bg-gradient-primary{background:linear-gradient(135deg,var(--primary),var(--secondary))}
+.navbar .nav-link{color:#f1f4ff!important}
+.navbar .nav-link:hover{color:#fff!important}
+
+/* QP-QUIZ-001 */
+.modern-select{background:#0f1430;color:#eaf0ff;border:1px solid rgba(255,255,255,.15)}
+#quizCards .card{animation:floaty 6s ease-in-out infinite}
+
+/* QP-FOOT-001 */
+footer{background:linear-gradient(180deg,#0f1226,#0a0c1d)}
+
+/* QP-MOBILE-OPT-001 */
+@media (max-width:576px){
+  .display-2{font-size:2rem}
+  .hero-section{padding:56px 0}
+}
