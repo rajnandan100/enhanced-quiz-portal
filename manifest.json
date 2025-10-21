@@ -1,0 +1,9 @@
+{
+  "short_name": "QuizPortal",
+  "name": "Enhanced Quiz Portal",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6366f1",
+  "icons": []
+}

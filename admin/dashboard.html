@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- QP-ADMIN-001: Admin Dashboard Head -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Dashboard - Quiz Portal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/admin.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@clerk/clerk-js@latest"></script>
+  <script defer src="/js/clerk-auth.js"></script>
+</head>
+<body>
+  <div class="container py-4">
+    <h1 class="h4">Admin Dashboard</h1>
+    <div class="row g-3">
+      <div class="col-md-4"><a href="quiz-manager.html" class="btn btn-primary w-100">Manage Quizzes</a></div>
+      <div class="col-md-4"><a href="user-manager.html" class="btn btn-secondary w-100">Manage Users</a></div>
+      <div class="col-md-4"><a href="content-manager.html" class="btn btn-warning w-100">Manage Content</a></div>
+    </div>
+  </div>
+</body>
+</html>
